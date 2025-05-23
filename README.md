@@ -1,2 +1,22 @@
-# Eye-controlled-mouse
-This Python project enables hands-free control of your mouse using eye and face landmark detection via MediaPipe and OpenCV. It tracks facial features in real-time to move the mouse cursor with your eye movements and simulates a mouse click when you blink.
+# 🖱️ Eye Controlled Mouse
+
+Control your mouse using just your eyes! This Python project leverages **MediaPipe**, **OpenCV**, and **PyAutoGUI** to detect facial landmarks in real time and map eye movements to cursor actions. When you blink, it simulates a mouse click.
+
+---
+
+
+## 🧠 How It Works
+
+- Uses **MediaPipe Face Mesh** to track facial landmarks.
+- Maps the position of your **right eye** to your screen coordinates.
+- Detects **blinks** with the **left eye** to trigger mouse clicks.
+- Works in **real-time** using your webcam.
+
+---
+
+## 🛠️ Requirements
+
+Install dependencies with:
+
+```bash
+pip install opencv-python mediapipe pyautogui
